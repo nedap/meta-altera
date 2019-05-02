@@ -1,0 +1,15 @@
+diff -Naur a/configs/socfpga_de10_nano_defconfig b/configs/socfpga_de10_nano_defconfig
+--- a/configs/socfpga_de10_nano_defconfig	2018-07-13 16:07:58.672770000 +0200
++++ b/configs/socfpga_de10_nano_defconfig	2018-07-16 16:22:23.007932897 +0200
+@@ -35,7 +35,10 @@
+ CONFIG_CMD_EXT4_WRITE=y
+ CONFIG_CMD_FAT=y
+ CONFIG_CMD_FS_GENERIC=y
+-CONFIG_ENV_IS_IN_MMC=y
++CONFIG_ENV_IS_IN_FAT=y
++CONFIG_ENV_FAT_INTERFACE="mmc"
++CONFIG_ENV_FAT_DEVICE_AND_PART="0:auto"
++CONFIG_ENV_FAT_FILE="u-boot-env.bin"
+ CONFIG_SPL_DM=y
+ CONFIG_DFU_MMC=y
+ CONFIG_FPGA_SOCFPGA=y
