@@ -1,7 +1,7 @@
 DEPENDS += "u-boot-mkenvimage-native"
 
 #Env binary size
-ENV_SIZE = "4096"
+ENV_SIZE = "8192"
 
 #Env base Name
 ENV_BASE_NAME ??= "${UBOOT_CONFIG}"
